@@ -103,7 +103,7 @@ publishing {
     repositories{
         maven {
             name = 'Jfrog'
-            url System.getenv("ARTIFACT_MAVEN_REPO")
+            url "https://tinder.jfrog.io/tinder/libs-release-local/"
             credentials {
                 username System.getenv("ARTIFACTORY_USER")
                 password System.getenv("ARTIFACTORY_PASSWORD")
